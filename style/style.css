@@ -1,0 +1,520 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "crossorigin", sans-serif;
+    background: linear-gradient(rgba(247, 241, 229, 0.70), rgba(247, 241, 229, 0.70)), url("../img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: #3f2a16;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.site-header {
+    width: 100%;
+    background-color: #edcb8c;
+    position: sticky;
+    top: 0;
+
+    z-index: 9999;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 8px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 65px;
+    height: auto;
+
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.05);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+    list-style: none;
+}
+
+.navbar-item {
+    list-style: none;
+}
+
+.navbar-link {
+    display: block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    color: #693f03;
+    text-decoration: none;
+
+    font-family: "Rubik", sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.navbar-link:hover {
+    background-color: #b36711;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 30px 60px;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+
+    flex: 1;
+}
+
+.main-content {
+    flex: 3;
+
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-card {
+    background-color: #fffdf8;
+    border: 1px solid #ead8b9;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(105, 63, 3, 0.08);
+    scroll-margin-top: 110px;
+}
+
+.content-card:hover {
+    box-shadow: 0 10px 25px rgba(105, 63, 3, 0.12);
+}
+
+.section-heading {
+    margin-bottom: 20px;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #b36711;
+    font-family: "Rubik", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    margin: 0;
+    color: #693f03;
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.karasuno-image {
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.content-text {
+    margin: 0 0 18px;
+    color: #5b4630;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.content-text:last-child {
+    margin-bottom: 0;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+.team-table, .achievement-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fffaf0;
+    font-size: 0.9rem;
+}
+
+.table-caption {
+    padding: 9px 12px;
+    color: #693f03;
+    background-color: #edcb8c;
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.table-header {
+    padding: 9px 12px;
+    background-color: #b36711;
+    color: #ffffff;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.table-data {
+    padding: 8px 12px;
+    border-bottom: 1px solid #ead8b9;
+    color: #4f3b27;
+    line-height: 1.5;
+    vertical-align: top;
+}
+
+.table-row:nth-child(even) .table-data {
+    background-color: #fff5df;
+}
+
+.table-row:hover .table-data {
+    background-color: #f8e5bb;
+}
+
+.subsection-title {
+    margin: 0 0 15px;
+    color: #693f03;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.25rem;
+}
+
+.history-box {
+    margin-top: 30px;
+    padding: 22px;
+    background-color: #fff5df;
+    border-left: 5px solid #b36711;
+    border-radius: 10px;
+}
+
+.achievement-list {
+    margin: 0;
+    padding-left: 22px;
+}
+
+.achievement-item {
+    margin-bottom: 14px;
+    color: #5b4630;
+    line-height: 1.7;
+}
+
+.achievement-item:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar {
+    flex: 1;
+
+    min-width: 250px;
+    position: sticky;
+    top: 110px;
+}
+
+.profile-card {
+    overflow: hidden;
+    background-color: #fffdf8;
+    border: 1px solid #ead8b9;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(105, 63, 3, 0.08);
+}
+
+.profile-header {
+    padding: 15px;
+    background-color: #edcb8c;
+    text-align: center;
+}
+
+.profile-label {
+    display: block;
+    margin-bottom: 5px;
+    color: #8a5205;
+    font-family: "Rubik", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.profile-title {
+    margin: 0 0 10px;
+    color: #693f03;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.6rem;
+}
+
+.profile-figure {
+    margin: 0;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+}
+
+.profile-info {
+    padding: 15px;
+}
+
+.profile-subtitle {
+    margin: 0 0 20px;
+    color: #693f03;
+    font-family: "Rubik", sans-serif;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #edcb8c;
+    padding-bottom: 10px;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info-label {
+    color: #b36711;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-value {
+    color: #5b4630;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.site-footer {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #edcb8c;
+    text-align: center;
+}
+
+.footer-text {
+    margin: 0;
+    color: #693f03;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 900px) {
+     .navbar-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 8px 15px;
+
+        gap: 10px;
+    }
+
+    .logo-container {
+        flex-shrink: 0;
+    }
+
+    .logo-image {
+        width: 65px;
+    }
+
+    .navbar {
+        flex: 1;
+
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+
+        gap: 3px;
+    }
+
+    .navbar-link {
+        padding: 6px 8px;
+        font-size: 0.75rem;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .profile-card {
+        width: 100%;
+    }
+
+    .profile-image {
+        max-width: 160px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-container {
+        flex-direction: row;
+
+        padding: 7px 10px;
+
+        gap: 5px;
+    }
+
+    .logo-image {
+        width: 55px;
+    }
+
+    .navbar {
+        flex: 1;
+    }
+
+    .navbar-list {
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        justify-content: flex-end;
+
+        gap: 2px;
+    }
+
+    .navbar-link {
+        padding: 5px 6px;
+
+        font-size: 0.65rem;
+    }
+
+    .main-container {
+        padding: 25px 15px 40px;
+
+        gap: 20px;
+    }
+
+    .content-card {
+        padding: 20px;
+
+        border-radius: 15px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .content-text {
+        font-size: 0.9rem;
+
+        text-align: left;
+    }
+
+    .table-container {
+        margin-top: 20px;
+    }
+
+    .team-table,
+    .achievement-table {
+        font-size: 0.8rem;
+    }
+
+    .table-header,
+    .table-data {
+        padding: 10px;
+    }
+
+    .profile-info {
+        padding: 20px;
+    }
+
+    .site-footer {
+        padding: 10px 15px;
+    }
+}
