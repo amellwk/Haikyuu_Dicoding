@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    font-family: "crossorigin", sans-serif;
+    font-family: "nunito", sans-serif;
     background: linear-gradient(rgba(247, 241, 229, 0.70), rgba(247, 241, 229, 0.70)), url("../img/background.png");
     background-size: cover;
     background-position: center;
